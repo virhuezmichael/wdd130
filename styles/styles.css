@@ -2,11 +2,11 @@ main {
     max-width: 840px;
 }
 nav {
-    background-colr: darkblue;
+    background-color: darkblue;
     padding: 10px;
 }
 nav a {
-    color: #999;
+    color: white;
     display: block;
     padding: 20px;
 }
