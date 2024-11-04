@@ -22,7 +22,7 @@ main img {
 p {
     padding: 0;
 }
-asside {
+aside {
     width: 18rem;
     margin: 1rem;
     border: 2px solid rgba (0,0,0,0.4);
@@ -31,7 +31,7 @@ asside {
     color: #333;
     text-align: center;
 }
-asside img {
+aside img {
     width: 200px;
     height: auto;
 }
