@@ -13,7 +13,6 @@ a {
 /* BODY */
 body{
     display: grid;
-    justify-content: center;
     width: 80%;
     margin: 0 auto;
 }
@@ -38,21 +37,24 @@ main{
 /* MAIN -> Hero */
 .hero {
     position: relative;
-    display: inline-block;
+    display: block;
 }
 .hero img {
     display:block;
     height: auto;
+    width: 100%;
+    
 }
 .hero article {
     position: absolute;
-    bottom: 30%;
+    bottom: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 50%);
     background-color: rgba(0, 0, 0, 0.6); 
     color: var(--accent1-color);
     padding: 10px;
     width: 80%;
+
 }
 .hero h1 {
     position: absolute;
@@ -63,13 +65,16 @@ main{
     transform: translateX(-50%);
     font-size: 3.5em;
     padding: 5px;
+    width: 60%;
+    text-align: center;
 }
-article img {
+.hero article img {
     float: right;
     margin-left: 10px;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: auto;
     object-fit: cover;
+    min-width: 150px;
 }
 
 /* FOOTER */
@@ -79,4 +84,8 @@ footer {
     display: flex;
     justify-content: space-between;
     background-color: var(--secondary-color);
+}
+
+.max-cont {
+    max-width: 100%;
 }
