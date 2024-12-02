@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Michael Virhuez">
+    <meta name="description" content="Michael Virhuez, wss130, week5 modeule. Contact us page for Rafting page.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <title>Contact Us - White Water Rafting | Michael Virhuez</title>
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <img src="images/rafting-logo.png" alt="logo image" width="150">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact Us</h1>
+        <section>
+        <h2>Contact Information</h2>
+        <p>White Water Rafting</p>
+        <p>Phone: 123-456-7890</p>
+        <p>Email: <a href="mailto:">WhiteWaterR</a></p>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1629.2174142716672!2d-68.96016802165515!3d-30.220353283218177!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2sar!4v1733020804765!5m2!1ses!2sar" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </section>      
+        <section class="our-stuff">
+            <h2>Our Staff</h2>
+            <div class="gallery profile-section">
+            <figure>
+                <img src="images/empleado1.jpg" alt="profile 1" width="150" height="150">
+                <figcaption>Coordinator</figcaption>
+            </figure>
+            <figure>
+                <img src="images/empleado2.jpg" alt="profile 2" width="150" height="150">
+                <figcaption>Picture Manager</figcaption>
+            </figure>
+            <figure>
+                <img src="images/empleado3.jpg" alt="profile 3" width="150" height="150">
+                <figcaption>Team Leader</figcaption>
+            </figure>
+            </div>
+        </section>
+        <section>
+        <h2>Leave your Message!</h2>
+        <form>
+            <div class="form-item column2">
+                <label for="username">User Name:</label>
+                <input type="text" id="username" name="username" >
+            </div>
+            <div class="form-item column2">
+                <label for="email">Email:</label>
+                <input type="email" name="usermail" >
+            </div>
+            <div class="form-item column4">
+                <label>Purpose of your Message:</label><br>
+                <input type="radio" id="yes" name="message" value="general">
+                <label for="yes">General Inquiry</label><br>
+              
+                <input type="radio" id="no" name="message" value="reservation">
+                <label for="no">Reservation Question</label><br>
+              
+                <input type="radio" id="maybe" name="message" value="suggestion">
+                <label for="maybe">Website Suggestion</label><br>
+            </div>
+            <div class="form-item column3">
+                <label class="text-label" for="feddback">Leave your message here</label>
+                <textarea id="feddback" name="feedback" rows="4"></textarea>
+            </div>
+            <div class="form-item column1">
+                <label for="subscribe">Please Subscribe me to the monthly newsletter</label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+            </div>
+            <button type="submit">Submit Message</button>
+        </form>
+    </section>
+    </main>
+    <footer>
+        <div>
+        </div>
+        <div class="copy">
+            <p>&copy; 2024 | Michael Virhuez</p>
+        </div>
+        <div class="social">
+            <img src="images/facebook.webp" alt="facebook icon" width="30">
+            <img src="images/instagram.webp" alt="instagram icon" width="30">
+            <img src="images/whatsapp.webp" alt="whatsapp icon" width="30">
+        </div>
+    </footer>
+</body>
+</html>

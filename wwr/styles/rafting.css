@@ -45,6 +45,14 @@ header nav ul li {
     margin: 0 10px;
 }
 
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    font-family: "Mona Sans";
+}
+
+
+
 /* MAIN */
 main{
 }
@@ -133,6 +141,7 @@ main{
 .gallery img {
     width: 180px;
     height: 150px;
+    object-fit: cover;
 }
 .gallery figcaption {
     background-color: #222;
@@ -160,8 +169,96 @@ footer {
     align-items: center;
 }
 
-
 .max-cont {
     max-width: 100%;
     align-items: center;
+}
+
+
+
+form {
+    width: 75%;
+    margin: 30px auto;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+}
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+}
+legend {
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1.3em;
+}
+label, input, button, select, textarea {
+    font-family: Josefine Sans;
+}
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+button {
+    margin: 1rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+button:hover {
+    background-color: darkgreen;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+.column1 {
+    grid-template-columns: 1fr 1fr;
+    margin: 0.5rem 0;
+}
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
+.column4 {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px auto;
+}
+.text-label {
+    text-align: center;
+}
+
+.profile-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+section h2 {
+    font-size: 2em;
+    text-align: center;
+    font-family: "Mona Sans";
+    background-color: var(--accent2-color);
+    margin: 20px auto;
+}
+
+section {
+    margin: 40px auto;
 }
