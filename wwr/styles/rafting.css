@@ -103,7 +103,7 @@ main{
 }
 
 .history {
-    /* background-color: var(--accent1-color); */
+   
 }
 .history h2 {
     font-size: 3.5em;
@@ -167,6 +167,7 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
+    gap: 10px;
 }
 
 .max-cont {
@@ -182,7 +183,7 @@ form {
     padding: 1rem;
     border: 1px solid rgb(0 0 0 / 0.1);
     border-radius: 0.5rem;
-    background-color: #eee;
+    background-color: var(--accent1-color); 
     display: grid;
 }
 fieldset {
@@ -215,7 +216,7 @@ input[type="checkbox"] {
 }
 button {
     margin: 1rem;
-    background-color: navy;
+    background-color: #007BFF;
     color: #fff;
     border: none;
     border-radius: .5rem;
@@ -223,7 +224,7 @@ button {
     font-size: 1.2rem;
 }
 button:hover {
-    background-color: darkgreen;
+    background-color: #0056b3;
 }
 
 .form-item {
@@ -261,4 +262,232 @@ section h2 {
 
 section {
     margin: 40px auto;
+}
+
+/* TRIP SECTION */
+
+    .trips {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin: 30px auto;
+        text-align: center;
+        justify-content: space-between;
+        font-family: "Mona Sans";
+    }
+    
+    .trip-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+        min-height: 400px;
+        flex: 1 1 30%;
+        background-color: var(--accent1-color); 
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 8px;
+    }
+    
+    .trip-card figure {
+        margin: 0;
+        position: relative;
+        width: 100%; 
+        height: 0;
+        padding-bottom: 100%; 
+    }
+    
+    .trip-card img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover;
+    }
+    
+    .info-card {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .price-card {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .price-card p {
+        background-color: green;
+        border-radius: 20px;
+        padding: 10px 20px; 
+        color: var(--accent2-color); 
+    }
+
+    .email {
+        color: #000;
+    }
+
+    .trips a {
+        margin: 1rem;
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        border-radius: .5rem;
+        padding: .75rem;
+        font-size: 1.2rem;
+    }
+    .trips a:hover {
+        background-color: #0056b3;
+    }
+
+    .footer2 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .info-footer {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+    .wildframe-footer {
+        text-align: center;
+        align-self: center;
+    }
+    .wildframe-footer a {
+        color: #000;
+        text-decoration: underline;
+    }
+
+
+    .newsletter {
+        text-align: center;
+        padding: 20px;
+        background-color: var(--accent1-color);
+    }
+    
+    .newsletter h2 {
+        margin-bottom: 10px;
+        background-color: var(--accent1-color);
+    }
+    
+    .newsletter-form {
+        display: inline-block;
+        gap: 10px;
+    }
+    
+    .newsletter-form input {
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .newsletter-form button {
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .newsletter-form button:hover {
+        background-color: #0056b3;
+    }
+    
+
+    .call-to-action {
+        text-align: center;
+        padding: 20px;
+        background-color: #007BFF;
+        color: white;
+    }
+    
+    .call-to-action a {
+        color: yellow;
+        text-decoration: underline;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        background-color: var(--accent1-color);
+    }
+    
+    .grid-item {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .grid-item img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .grid-item h3 {
+        margin: 10px 0;
+    }
+    
+    .grid-item p {
+        padding: 0 10px;
+    }
+
+
+.trips-summary {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.trips-summary h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+.trips-summary table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+}
+.trips-summary th {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 1rem;
+}
+.trips-summary td {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    font-size: 0.9rem;
+    text-align: left;
+}
+.trips-summary tbody tr:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+.trips-summary td a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+.trips-summary td a:hover {
+    text-decoration: underline;
+}
+.trips-summary tbody tr:hover {
+    background-color: #e6f7ff;
 }
