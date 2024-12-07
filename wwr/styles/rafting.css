@@ -333,7 +333,7 @@ section {
     .trips a {
         margin: 1rem;
         background-color: #007BFF;
-        color: #fff;
+        color: #000;
         border: none;
         border-radius: .5rem;
         padding: .75rem;
@@ -388,7 +388,7 @@ section {
     .newsletter-form button {
         padding: 10px 20px;
         background-color: #007BFF;
-        color: white;
+        color: #000;
         border: none;
         border-radius: 5px;
         cursor: pointer;
@@ -403,11 +403,11 @@ section {
         text-align: center;
         padding: 20px;
         background-color: #007BFF;
-        color: white;
+        color: #000;
     }
     
     .call-to-action a {
-        color: yellow;
+        color: #000;
         text-decoration: underline;
     }
 
@@ -466,7 +466,7 @@ section {
 }
 .trips-summary th {
     background-color: #007BFF;
-    color: #fff;
+    color: #000;
     padding: 12px 15px;
     text-align: left;
     font-size: 1rem;
